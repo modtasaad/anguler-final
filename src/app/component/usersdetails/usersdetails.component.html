@@ -1,0 +1,14 @@
+<!-- <p>usersdetails works!</p> -->
+<div class="alert alert-info " *ngIf= "user ; else fgblock"  >
+    <h4> Name: {{user.name}}</h4>
+    <h4> User Name:  {{user.username}}</h4>
+    <h4> Email: <a r>{{user.email}}</a> </h4>
+    <!-- <p>uid:{{id}} </p> -->
+    <p></p>
+</div>
+
+<ng-template #fgblock >
+    <div  class="alert alert-info " >
+        <h1>LOADING..........</h1>
+    </div>
+</ng-template>

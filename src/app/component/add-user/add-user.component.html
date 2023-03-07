@@ -1,0 +1,29 @@
+<!-- <p>add-user works!</p> -->
+<div class="cona">
+<div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" #name>
+        <label>Name</label>
+      </div>
+      <div class="user-box">
+        <input type="text" #username>
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="email" #email>
+        <label>Email</label>
+      </div>
+      <a>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+       <input type="button" value=" Submit" style="border: none; 
+       background-color:gray; color: #fff; "  class="cho" 
+       (click)="add(name.value,username.value,email.value)"  >
+      </a>
+    </form>
+  </div>
+</div>

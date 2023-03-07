@@ -1,0 +1,9 @@
+<!-- <p>users works!</p> -->
+
+<div *ngFor="let u of  user " >
+    <div class="alert alert-info ">
+        <h4> Name: {{u.name}}</h4>
+        <h4> User Name:  {{u.username}}</h4>
+        <h4> Email: <a routerLink="/user/{{u.id}}">{{u.email}}</a> </h4>
+    </div>
+</div>
